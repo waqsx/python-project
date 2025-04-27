@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "module": "Node16",  // Должно совпадать с moduleResolution
+    "moduleResolution": "Node16",
+    "types": ["node"],
+    "noEmit": false,
+    "outDir": "./dist",
+    "skipLibCheck": true,
+    "target": "ES2020"  // Добавлено для совместимости
+  },
+  "include": ["vite.config.ts"],
+  "exclude": ["node_modules", "src"]
+}
